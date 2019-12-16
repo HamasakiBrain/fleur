@@ -1,0 +1,576 @@
+@font-face 
+    font-family: 'Cormorant'
+    src: url('/fonts/Cormorant/Cormorant/Cormorant-Regular.ttf') format("opentype")
+
+@font-face 
+    font-family: 'Cormorant'
+    src: url('/fonts/Cormorant/Cormorant/Cormorant-SemiBold.ttf') format("opentype")
+
+@font-face 
+    font-family: 'Cormorant'
+    src: url('/fonts/Cormorant/Cormorant/Cormorant-Bold.ttf') format("opentype")
+@font-face 
+    font-family: 'Cormorant'
+    src: url('/fonts/Cormorant/Cormorant/Cormorant-Medium.ttf') format("opentype")
+@font-face 
+    font-family: 'Open Sans'
+    src: url('/fonts/Open Sans/OpenSans-Regular.ttf') format("opentype")
+@font-face 
+    font-family: 'Open Sans'
+    src: url('/fonts/Open Sans/OpenSans-Bold.ttf') format("opentype")
+@font-face 
+    font-family: 'Open Sans - Semi Bold'
+    src: url('/fonts/Open Sans/OpenSans-SemiBold.ttf') format("opentype")
+@font-face 
+    font-family: 'Open Sans'
+    src: url('/fonts/Open Sans/OpenSans-Light.ttf') format("opentype")
+
+
+
+$purple: #f28ca9
+$line: #f38eab
+$dark: #1e1e1e
+$gray-1: #adb3c1
+$bgheader: #f1f2f3
+$open: "Open Sans", sans-serif
+$cormorant: 'Cormorant', serif !important
+body
+    font-family: $cormorant
+    background-color:  #f0f1f3
+    overflow-x: hidden
+    position: relative
+header
+    background: $bgheader
+a
+    text-decoration: none !important
+.header
+    a
+        margin-right: 45px
+        &::last-child
+            margin-right: 0
+
+    &_link
+        font-size: 18px
+        font-family: $open
+        font-weight: 600
+        color: $dark
+        text-decoration: none
+    &_link.active
+        color: $purple !important
+        font-weight: 700
+        position: relative
+        &::after
+            content: ''
+            width: 100%
+            height: 1px
+            background: $line
+            position: absolute
+            left: 0
+            bottom: -3px
+        &::before
+            content: ''
+            position: absolute
+            height: 14px
+            top: 2px
+            width: 1px
+            background: $gray-1 
+            display: block
+            right: -25px
+.logo
+    color: $gray-1
+    font-size: 28px
+    font-weight: 500
+    span
+        color: $purple
+.nav
+    display: flex
+#navigation
+    padding: 42px 0 30px 0
+.search
+    width: 232px
+    position: relative
+    .input_search
+        border-radius: 19px
+        background-color: #f8f8f8
+        border: 0
+        box-shadow: 0 14px 27px rgba(0, 0, 0, 0.04)
+        height: 37px
+        width: 100%
+        padding: 0 10px
+        &-button
+            position: absolute
+            right: 17px
+            top: 11px
+            width: 16px
+            height: 16px
+            background-image: url('/img/search.svg')
+            background-color: transparent
+            border: 0
+            background-repeat: no-repeat
+            cursor: pointer
+*::focus
+    outline: 0 !important
+.main
+    position: relative
+    display: block
+.container
+    z-index: 999
+    position: relative
+.bg_flowers
+        width: 100%
+        height: 100%
+        background-image: url('/img/flowers.png') !important
+        background-position: right 20px
+        background-size: contain
+        background-repeat: no-repeat
+        
+
+.row
+    &_content
+        padding: 283px 0 200px 0
+        &-title
+            max-width: 595px
+            color: $dark
+            font-family: $cormorant
+            font-size: 64px
+            font-weight: 500
+            line-height: 60px
+            span
+                color: $purple
+        &-desc
+            margin-top: 56px
+            max-width: 595px
+            color: $gray-1
+            font-family: $open
+            font-size: 20px
+            font-weight: 400
+            line-height: 34px
+        &-button
+            margin-top: 70px
+            display: flex
+            max-width: 270px
+            border-radius: 34px
+            justify-content: center
+            padding: 27px 0 
+            background-color: #f28ca9
+            background-image: linear-gradient(-137deg, rgba(242, 96, 168, 0.7) 0%, rgba(196, 69, 120, 0.7) 100%), url('/img/shadow.png')
+            color: #ffffff
+            font-family: "Open Sans - Semi Bold"
+            font-size: 18px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 1.35px
+.counter
+    display: flex
+    flex-flow: column
+    span
+        position: relative
+        top: -150px
+        color: $dark
+        font-family: $cormorant
+        font-size: 24px
+        font-weight: 400
+        line-height: 150px
+    span.active
+        color: $purple
+        position: relative
+        &::before
+          content: ''
+          width: 32px
+          height: 1px
+          position: absolute
+          display: block  
+          background: $purple
+          right: 0
+          bottom: 49%
+.sale
+    display: flex
+    margin-top: 89px
+    max-width: 669px
+    padding: 27px 39px
+    border-radius: 10px
+    background-color: #ffffff
+    .left_sale
+        span
+            color: #1e1e1e
+            font-family: "Open Sans"
+            font-size: 18px
+            font-weight: 400
+            line-height: 60px
+        &-price
+            display: flex
+            color: #1e1e1e
+            font-family: $open
+            font-size: 18px
+            font-weight: 400
+            line-height: 60px
+            .price
+                color: #1e1e1e
+                font-family: $cormorant
+                font-size: 54px
+                font-weight: 400
+                line-height: 60px
+                margin-right: 25px
+                small
+                    color: #1e1e1e
+                    font-family: "Open Sans - Semi Bold"
+                    font-size: 18px
+                    font-weight: 400
+                    line-height: 60px
+            .price.old
+                margin-right: 0
+                font
+                    color: #adb3c1
+                    text-decoration: line-through
+                small
+                    color: #adb3c1
+    .right_sale
+        margin: 0 auto
+        align-self: center
+    .right_sale-button
+        max-width: 194px
+        text-align: center
+        padding: 15px 69px
+        border-radius: 24px
+        border: 2px solid #f28ca9
+        display: flex
+        color: #1e1e1e
+        font-family: "Open Sans - Semi Bold"
+        font-size: 13px
+        font-weight: 400
+        letter-spacing: 1.35px
+        text-transform: uppercase
+        margin-left: 50px
+       
+.catalog
+    &_content
+        margin: 0 auto
+        &-logo
+            margin: 0 auto
+            width: 43px
+            height: 40px
+        &-title
+            color: $dark
+            font-family: $cormorant
+            font-size: 48px
+            font-weight: 400
+            line-height: 46px
+            text-align: center  
+            margin-top: 18px
+        &-desc
+            max-width: 523px
+            color: #adb3c1
+            margin-top: 39px
+            font-family: $open
+            font-size: 18px
+            font-weight: 400
+            line-height: 28px
+            text-align: center
+.item
+ 
+    img
+        width: 100%
+    &_name
+        color: $dark
+        font-family: "Open Sans - Semi Bold"
+        font-size: 18px
+        font-weight: 400
+        line-height: 28px
+        text-align: center
+    &_count
+        color: $dark
+        font-family: $open
+        font-size: 18px
+        font-weight: 400
+        line-height: 28px
+        text-align: center
+    &_buttons
+        margin-top: 30px
+        display: flex
+        justify-content: center
+        &-more
+            margin-right: 20px
+            max-width: 127px
+            border-radius: 16px
+            border: 2px solid #f28ca9
+            color: $dark
+            font-family: "Open Sans - Semi Bold"
+            font-size: 8px
+            font-weight: 400
+            letter-spacing: 1.35px
+            text-transform: uppercase
+            padding: 11px 35px
+            transition: .3s
+            transform: scale(0)
+        &-buy
+            max-width: 127px
+            border-radius: 16px
+            padding: 11px 35px
+            background-color: #f28ca9
+            color: #ffffff
+            font-family: "Open Sans - Semi Bold"
+            font-size: 8px
+            font-weight: 400
+            transform: scale(0)
+            letter-spacing: 1.35px
+            transition: .3s
+
+.items:hover
+    .item_buttons
+        &-more
+            transform: scale(1)
+        &-buy
+            transform: scale(1)
+.contacts 
+    background-image: url('/img/flowers-contacts.png')
+    width: 100%
+    height: 900px
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: left center
+    background-color: #f8f8f8
+    position: relative
+    &_content
+        padding-top: 88px
+        &-title
+            color: $dark
+            font-family: "Cormorant - Semi Bold"
+            font-size: 48px
+            font-weight: 400
+            line-height: 46px
+        &-desc
+            margin-top: 39px
+            color: #adb3c1
+            font-family: $open
+            font-size: 18px
+            font-weight: 400
+            line-height: 28px
+        &-text
+            margin-top: 55px
+            color: #1e1e1e
+            font-family: $open
+            font-size: 18px
+            font-weight: 400
+            line-height: 28px
+        &-number
+            display: flex
+            margin-top: 58px
+            color: #1e1e1e
+            font-family: "Open Sans - Semi Bold"
+            font-size: 18px
+            font-weight: 400
+            line-height: 18px
+            img
+                width: 18px
+                height: 18px
+                margin-right: 10px
+    &_feedback
+        margin-top: 30px
+        display: flex
+        max-width: 574px
+        border-radius: 10px
+        background-color: #ffffff
+        padding: 20px 40px
+        &-left
+            label
+                color: #1e1e1e
+                font-family: $open
+                font-size: 16px
+                font-weight: 400
+                line-height: 60px
+            input
+                border: 0
+                width: 288px
+                height: 49px
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1)
+                border-radius: 25px
+                background-color: #ffffff
+                padding: 15px 20px
+        &-right
+            align-self: flex-end
+            a
+                border-radius: 24px
+                border: 2px solid #f28ca9
+                padding: 15px 69px
+                color: #1e1e1e
+                font-family: "Open Sans - Semi Bold"
+                font-size: 13px
+                font-weight: 400
+                letter-spacing: 1.35px
+                display: flex
+.text-center
+    text-align: center              
+.copy
+    margin-top: 22px
+    color: #1e1e1e
+    font-family: $open
+    font-size: 16px
+    font-weight: 400
+    line-height: 28px
+.popup
+    position: absolute
+    width: 100%
+    height: 100vh
+    background: #ffffff
+    z-index: 9999
+    right: 0
+    bottom: 0
+    left: 0
+    display: flex
+    &-close
+        width: 32px
+        height: 32px
+        position: absolute
+        right: 60px
+        top: 60px
+        cursor: pointer
+    &-block
+        padding: 90px 
+        margin: 0 auto
+        width: 685px
+        height: 671px
+        border-radius: 10px
+        background-color: #f8f8f8
+        align-self: center
+        &-title
+            text-align: center
+            color: #1e1e1e
+            font-family: $cormorant
+            font-size: 36px
+            font-weight: 500
+            line-height: 28px
+        &-desc
+            margin-top: 39px
+            text-align: center
+            color: #1e1e1e
+            font-family: $open
+            font-size: 18px
+            font-weight: 400
+            line-height: 28px
+        &-content
+            margin-top: 50px
+            input
+                width: 100%
+                max-width: 508px
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08)
+                border-radius: 25px
+                background-color: #ffffff
+                border: 0
+                padding: 10px 15px
+                margin-bottom: 40px
+        &-submit
+            a
+                border-radius: 24px
+                border: 2px solid #f28ca9
+                padding: 15px
+                justify-content: center
+                color: #1e1e1e
+                font-family: "Open Sans - Semi Bold"
+                font-size: 13px
+                font-weight: 400
+                letter-spacing: 1.35px
+                display: flex
+                max-width: 192px
+                width: 100%
+                margin: 0 auto
+@media screen and (max-width: 480px)
+    .popup
+        &-block
+            padding: 46px
+    footer
+        margin-top: 80px !important
+    .footer_link
+        font-size: 11px  !important
+    .contacts_feedback
+        display: block
+    .sale
+        display: block
+        margin-top: 30px
+        padding: 10px 20px
+        .right_sale-button
+            margin: 0 auto
+        .left_sale
+            &-price
+                justify-content: center
+                .price
+                    font-size: 30px
+            span
+                font-size: 13px
+    .counter
+        display: none
+    .row_content
+        padding: 0
+        &-title
+            font-size: 30px
+            line-height: normal
+        &-desc
+            font-size: 16px
+            margin-top: 0
+        &-button
+            margin-right: auto
+            margin-left: auto
+    .search
+        margin-top: 20px
+        width: 100%
+    .header_link
+        font-size: 13px
+    .nav
+        justify-content: center
+        margin-top: 20px
+    .logo
+        margin-right: 0 !important
+        display: flex
+        justify-content: center
+    .header a 
+        margin-right: 0 !important
+    .header_link.active
+        margin-right: 45px !important
+.slider-button
+    width: 82px
+    height: 82px
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13)
+    background-color: #ffffff
+    border: 0
+    border-radius: 100px
+    position: absolute
+    top: 25%
+    z-index: 8
+    svg
+        fill: #adb3c1
+        width: 32px
+        height: 32px
+        &::focus
+            outline: 0 !important
+            
+.slider-prev
+    left: 0
+.slider-next
+    right: 0
+    svg
+        fill: #f28ca9
+        transform: rotate(180deg)
+.row
+    position: relative
+.bg
+    background-color: #1e1e1e
+    padding: 25px 0
+.footer
+    &_link
+        font-size: 16px
+        font-family: $open
+        font-weight: 400
+        color: #8e8e8e
+        text-decoration: none
+        line-height: 28px
+    &_link.active
+        color:  #ffffff !important
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            height: 14px
+            top: 5px
+            width: 1px
+            background: #8e8e8e
+            display: block
+            right: -25px

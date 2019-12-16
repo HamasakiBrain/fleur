@@ -1,13 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fleur de Marin</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/node_modules/reset-css/reset.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="row" id="navigation">
+                <div class="col-lg-4 col-md-4">
+                    <a class="logo" href="#">
+                            <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAYAAADpnJ2CAAABuUlEQVRIie3WS4iPURjH8c+MaUqJzdhaWYmwIRuKshE2li4pS1m4ZIPshEHZuCxGFpJLRInYsXFLsnFZGqJsDHKZ3Dr1vLzzP+/7zv/PsJpvvfV2nuc5v3Oe59y63vWfMUb0Yj4WYRamYyom4xumYG7PGImtwKYQnJRZfzP8t4IT0Y/18d/EYwwlwT0x3Qn4gDd4ikd4hY81nfRhAMvQnVlzruNtT+R8QWZmGDdwFpeTc8mW0nYIy7Ooeq7hcxrZsRqX3hj9SdyKOiX/LqzB6iyingu4KTo4Xe/3i5m4hJ34gdctM25iEPuL0nRH6o40BJTZjV24iM34lHmMJIlswe2itSj2gRh5O2zDKpyIGtcxhHU4V7YXgi9wsCawlbRgdsSGPor3LfavUfPFON8aXAh+wWHczbqvZjY24GpJ8GWs5rVYigdVkeWN/xwbY1TTMs+clTiOvZG+O3iSeTUIJu5FR6cwI/MeyULMi8y0TdUJ8RBLoqajrcK+rGUUqgTFPtuKOdiOK3HcDbb4dXwWNwWkbfIM++Irt1f9t0XdDP8Z44Ljgv9dMF3GHfEnj6h0D36PR9P9jiLxE7PUVs+X5Dn7AAAAAElFTkSuQmCC" alt="">
+                        <span>Fleur</span> de Marin
+                    </a>
+                </div>
+                <div class="col-lg-5 col-md-5 align-self-center nav">
+                    <a href="#" class="header_link active">Каталог</a>
+                    <a href="#" class="header_link">Оформление торжеств</a>
+                </div>
+                <div class="col-lg-3 align-self-center">
+                  <div class="search">
+                        <input type="text" class="input_search">
+                        <button class="input_search-button"></button>
+                  </div>
+                </div>
+            </div>
+        </div>        
+    </header>
+    <div class="main bg_flowers">
+        <div class="container">
+            <div class="row row_content">
+               <div class="col-lg-1 counter">
+                   <span>01</span>
+                   <span class="active">02</span>
+                   <span>03</span>
+                   <span>04</span>
+               </div>
+               <div class="col-lg-11">
+                   <div class="row_content-title">
+                    Большой ассортимент 
+                    <span>цветов</span> и <span>композиций</span>
+                   </div>
+                   <div class="row_content-desc">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dolores sed veniam. Error repellat rem iusto explicabo beatae ullam nesciunt.
+                   </div>
+                   <a class="row_content-button" href="#">
+                        Заказать
+                   </a>
+                   <div class="sale">
+                       <div class="left_sale">
+                           <span>При покупке 08.12.2019-12.12.2019</span>
+                           <div class="left_sale-price">
+                               <div class="price">
+                                1400 <small>руб.</small>
+                               </div>
+                               <div class="price old"><font>1600</font> <small>руб.</small></div>
+                           </div>
+                       </div>
+                       <div class="right_sale">
+                           <a href="#" class="right_sale-button">Купить</a>
+                       </div>
+                   </div>
+               </div>
+               
+            </div>
+        </div>
+    </div>
+    <div class="catalog">
+        <div class="container">
+            <div class="row">
+                <div class="catalog_content">
+                    <div class="catalog_content-logo"><img src="/img/flowers.svg" alt=""></div>
+                    <div class="catalog_content-title">Каталог</div>
+                    <div class="catalog_content-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quidem quibusdam eligendi tenetur sit corporis.</div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <button class="slider-button slider-prev">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                    <g>
+                        <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                            c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>
+                    </g>
+                    </svg>
+                </button>
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+                <button class="slider-button slider-next">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                    <g>
+                        <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                            c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>
+                    </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 items">
+                    <div class="item">
+                        <img src="/img/flowers-1.png" alt="">
+                    </div>
+                    <div class="item_name">Букет розовых тюльпанов</div>
+                    <div class="item_count">46 шт.</div>
+                    <div class="item_buttons">
+                        <a href="#" class="item_buttons-more">Подробнее</a>
+                        <a href="#" class="item_buttons-buy">Купить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6">
+                    <div class="contacts_content">
+                        <div class="contacts_content-title">Контакты</div>
+                        <div class="contacts_content-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, deleniti.</div>
+                        <div class="contacts_content-text">Свадебный букет для невесты, праздничные цветы и корзины, для юбиляра, цветочные аксессуары, – всё это готов предложить магазин «Fleur de Marin». Всегда свежие, красочные букеты и композиции из свежесрезанных цветов любой сложности. Великолепные цветы украсят любой интерьер и создадут неповторимую атмосферу в каждом доме. Новый магазин «Цветочная лавка» – мы создадим праздничное настроение круглосуточно!</div>
+                        <div class="contacts_content-number">
+                            <img src="/img/001-smartphone.svg" alt="">
+                            +7 (934) 123-45-67
+                        </div>
+                        <div class="contacts_content-number mt-2">
+                            <img src="/img/002-email.svg" alt="">
+                            fleur-de-Marin@yandex.ru
+                        </div>
+                        <div class="contacts_feedback">
+                            <div class="contacts_feedback-left">
+                                <label>Или закажите звонок:</label>
+                                <input type="text" placeholder="+7 (ххх) ххх-хх-хх">
+                            </div>
+                            <div class="contacts_feedback-right">
+                                <a href="#">Отправить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <footer class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a class="logo" href="#">
+                        <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAYAAADpnJ2CAAABuUlEQVRIie3WS4iPURjH8c+MaUqJzdhaWYmwIRuKshE2li4pS1m4ZIPshEHZuCxGFpJLRInYsXFLsnFZGqJsDHKZ3Dr1vLzzP+/7zv/PsJpvvfV2nuc5v3Oe59y63vWfMUb0Yj4WYRamYyom4xumYG7PGImtwKYQnJRZfzP8t4IT0Y/18d/EYwwlwT0x3Qn4gDd4ikd4hY81nfRhAMvQnVlzruNtT+R8QWZmGDdwFpeTc8mW0nYIy7Ooeq7hcxrZsRqX3hj9SdyKOiX/LqzB6iyingu4KTo4Xe/3i5m4hJ34gdctM25iEPuL0nRH6o40BJTZjV24iM34lHmMJIlswe2itSj2gRh5O2zDKpyIGtcxhHU4V7YXgi9wsCawlbRgdsSGPor3LfavUfPFON8aXAh+wWHczbqvZjY24GpJ8GWs5rVYigdVkeWN/xwbY1TTMs+clTiOvZG+O3iSeTUIJu5FR6cwI/MeyULMi8y0TdUJ8RBLoqajrcK+rGUUqgTFPtuKOdiOK3HcDbb4dXwWNwWkbfIM++Irt1f9t0XdDP8Z44Ljgv9dMF3GHfEnj6h0D36PR9P9jiLxE7PUVs+X5Dn7AAAAAElFTkSuQmCC" alt="">
+                    <span>Fleur</span> de Marin
+                    </a> <br>
+                    <span class="copy">Все права защищены 2019 &copy; Fleur de Marin</span cla>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                        <a href="#" class="footer_link active mr-5">Польовательские условия</a>
+                        <a href="#" class="footer_link">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup">
+        <div class="popup-close">
+            <img src="/img/close-icon.png" alt="">
+        </div>
+        <div class="popup-block">
+            <div class="popup-block-title">
+                Заказать звонок
+            </div>
+            <div class="popup-block-desc">
+                Оставьте свои контактные данные и мы свяжемся с Вами
+в ближайшее время.
+            </div>
+            <div class="popup-block-content">
+                <input type="text" value="Ярослав">
+                <input type="text" placeholder="Телефон:">
+                <input type="email" placeholder="Email:">
+            </div>
+            <div class="popup-block-submit">
+                <a href="#">Отправить</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
